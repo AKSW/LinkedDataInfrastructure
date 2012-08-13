@@ -100,7 +100,7 @@ class Spb_AnnotateController extends Spb_Controller
             'PREFIX atom: <http://www.w3.org/2005/Atom/> ' .
             'PREFIX aair: <' . $nsAair . '> ' .
             'PREFIX pingback: <' . $nsPingback . '> ' .
-            'SELECT ?activity ?date ?verb ?object ' .
+            'SELECT ?ping ?pubDate ?source ?target ?changeset ' .
             'WHERE { ' .
             '   <' . $resourceUri . '> pingback:ping ?ping . ' .
             '   ?ping a pingback:Item ; ' .
