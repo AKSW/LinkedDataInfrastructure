@@ -16,7 +16,6 @@ class Spb_PushController extends Spb_Controller
         $bootstrap = $this->_app->getBootstrap();
         $config = $bootstrap->getResource('config');
 
-        $this->_callbackUrl = $this->_app->getBaseUri() . '?c=push&a=callback';
         $this->_defaultHubUrl = $config['push.hub'];
     }
 
