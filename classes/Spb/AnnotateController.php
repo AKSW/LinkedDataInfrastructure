@@ -71,7 +71,7 @@ class Spb_AnnotateController extends Spb_Controller
         $store->addMultipleStatements($model->getModelIri(), $newNote);
         $logger->info('addNote: note written to model.');
 
-        $feedUri = $this->_app->getBaseUri() . '?c=feed&a=getFeed&uri=' . urlencode($resourceUri);
+        $feedUri = $this->_app->getBaseUri() . '?c=feed&a=getfeed&uri=' . urlencode($resourceUri);
 
         $logger->info('publish updates to feed: "' . $feedUri . '".');
 
