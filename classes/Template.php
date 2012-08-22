@@ -11,6 +11,7 @@ class Template {
     private $_layout = null;
     private $_rawContent = null;
     private $_debugLog = '';
+    private $_messages = array();
 
     public static function getInstance ($app)
     {
@@ -44,6 +45,10 @@ class Template {
 
     public function addDebug ($debugString) {
         $this->_debugLog .= $debugString . "\n";
+    }
+
+    public function addMessage ($message) {
+        $this->_messages[] = $message;
     }
 
     public function disableLayout () {
