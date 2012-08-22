@@ -11,7 +11,15 @@
 foreach ($this->_menuFiles as $menuFile) {
     include $menuFile;
 }
+?>
 
+<?php foreach ($this->_messages as $message) : ?>
+    <div class="message">
+        <?= $message ?>
+    </div>
+<?php endforeach; ?>
+
+<?php
 foreach ($this->_contentFiles as $contentFile) {
     include $contentFile;
 }
