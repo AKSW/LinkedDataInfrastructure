@@ -21,7 +21,7 @@ class Spb_FeedController extends Spb_Controller
 
             $pushController = new Spb_PushController($this->_app);
 
-            $feedUri = $this->_app->getBaseUri() . '?c=feed&amp;a=getFeed&amp;uri=' . urlencode($uri);
+            $feedUri = $this->_app->getBaseUri() . '?c=feed&amp;a=getfeed&amp;uri=' . urlencode($uri);
 
             $updated = '0';
 
