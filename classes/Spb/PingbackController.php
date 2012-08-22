@@ -27,22 +27,30 @@ class Spb_PingbackController extends Spb_Controller
             if ($sourceStatements !== null) {
                 $memModel = new Erfurt_Rdf_MemoryModel($sourceStatements);
 
-                $o = array('type' => 'uri', 'value' => $target);
-                $spo = $memModel->getSP($o);
+                if ($memModel->hasResource($target)) {
+                    $o = array('type' => 'uri', 'value' => $target);
+                    $sp = $memModel->getSP($o);
+                    $po = $memModel->getPO($target);
+                    $so = $memModel->getSO($target);
 
-                // TODO get also statements, where the target occures at S or P
+                    if (count($sp) > 0 && count($po) > 0 && count($so) > 0) {
+                        $spo = array();
+                        $spo[$target] = $po;
+                        $spo = array_merge($spo, $sp, $so);
 
-                $template->addDebug(var_export($spo, true));
-
-                if (count($spo) <= 0) {
-                    return;
+                        $annotateController = new Spb_AnnotateController($this->_app);
+                        $annotateController->addNote($target, $source, $spo);
+                    } else {
+                        // should not happen, because we have checked this with hasResource()
+                    }
+                } else {
+                    // no statements with target found in source -> invalid ping
                 }
-
-                $annotateController = new Spb_AnnotateController($this->_app);
-                $annotateController->addNote($target, $source, $spo);
+            } else {
+                //no statements found -> invalid ping
             }
         } else {
-            // invalide ping
+            // no ping, show form for manual ping
             $template->addContent('templates/sendpingback.phtml');
         }
 
