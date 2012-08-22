@@ -35,7 +35,7 @@ class Application
         /**
          * Prepare Template
          */
-        $template = Template::getInstance();
+        $template = Template::getInstance($this);
         $template->setLayout('templates/layout.phtml');
         $template->addMenu('templates/menu.phtml');
 

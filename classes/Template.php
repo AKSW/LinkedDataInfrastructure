@@ -1,5 +1,7 @@
 <?php
 class Template {
+    public $baseUri;
+
     private static $_instance = null;
 
     private $_layoutEnabled = true;
@@ -10,15 +12,16 @@ class Template {
     private $_rawContent = null;
     private $_debugLog = '';
 
-    public static function getInstance ()
+    public static function getInstance ($app)
     {
         if (self::$_instance == null) {
-            self::$_instance = new Template();
+            self::$_instance = new Template($app);
         }
         return self::$_instance;
     }
 
-    public function __construct () {
+    public function __construct ($app) {
+        $this->baseUri = $app->getBaseUri();
         if ($this->_menuFiles === null) {
             $this->_menuFiles = array();
         }
