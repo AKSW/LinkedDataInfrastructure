@@ -60,4 +60,24 @@ class Spb_ModelController extends Spb_Controller
 
         return $template;
     }
+
+    public function queryAction ($template)
+    {
+        $bootstrap = $this->_app->getBootstrap();
+        $request = $bootstrap->getResource('request');
+        $model = $bootstrap->getResource('model');
+
+        $query = $request->getValue('query', 'post');
+
+        if ($query !== null) {
+            $result = $model->sparqlQuery($query);
+
+            $template->addContent('templates/queryresult.phtml');
+            $template->result = $result;
+        } else {
+            $template->addContent('templates/query.phtml');
+        }
+
+        return $template;
+    }
 }
