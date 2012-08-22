@@ -5,7 +5,7 @@ Ping a resource and subscribe to its Activity/Histroy/Comment Feed.
 
 Installation
 ------------
-You need a webserver (tested with Apache, but I hope it also runs with nginx and lighttd) and a database backend which is supported by Erfurt (MySQL and Virtuoso).
+You need a webserver (tested with Apache, but I hope it also runs with nginx and lighttd) with PHP (including curl) and a database backend which is supported by Erfurt (MySQL and Virtuoso).
 
 ### Erfurt
 Run `git submodule init` and `git submodule update` to clone Erfurt.
