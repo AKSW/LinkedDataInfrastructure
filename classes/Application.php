@@ -5,10 +5,14 @@ require_once 'Bootstrap.php';
 
 class Application
 {
+    private static $_app = null;
+
     private $_classNamespace = 'Spb_';
     private $_bootstrap = null;
     private $_baseUri = null;
-    private static $_app = null;
+    private $_baseDir = null;
+
+    private $_controllers = array();
 
     public static function getInstance()
     {
@@ -25,6 +29,15 @@ class Application
         }
 
         return $this->_bootstrap;
+    }
+
+    public function getController ($controllerName)
+    {
+        if (!isset($this->_controllers[$controllerName])) {
+            $this->_controllers[$controllerName] = new $controllerName($this);
+        }
+
+        return $this->_controllers[$controllerName];
     }
 
     public function run() {
@@ -57,7 +70,7 @@ class Application
         $controllerName = $this->_classNamespace . $requestController . 'Controller';
 
         $actionName = $requestAction . 'Action';
-        $controller = new $controllerName($this);
+        $controller = $this->getController($controllerName);
         $template = $controller->$actionName($template);
 
         $template->render();

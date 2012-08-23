@@ -37,7 +37,7 @@ class Spb_PingbackController extends Spb_Controller
                         $spo[$target] = $po;
                         $spo = array_merge($spo, $sp, $so);
 
-                        $annotateController = new Spb_AnnotateController($this->_app);
+                        $annotateController = $this->_app->getController('Spb_AnnotateController');
                         $annotateController->addNote($target, $source, $spo);
                     } else {
                         // should not happen, because we have checked this with hasResource()

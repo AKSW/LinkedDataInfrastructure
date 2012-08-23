@@ -4,14 +4,14 @@ class Spb_ModelController extends Spb_Controller
     public function getChanges ($resourceUri)
     {
         $bootstrap = $this->_app->getBootstrap();
-        $model = $bootstrap->getResource('model');
+        $store = $bootstrap->getResource('store');
 
-        $modelUri = $model->getModelIri();
+        $model = $store->getModel($resourceUri);
 
-        $statementsNew = Tools::getLinkedDataResource($resourceUri, $modelUri);
-        $statementsDiff = Erfurt_Rdf_Model::getStatementsDiff($statementsLocal, $statementsCurrent);
+        $statementsNew = Tools::getLinkedDataResource($resourceUri, $model->getModelIri());
+//        $statementsDiff = Erfurt_Rdf_Model::getStatementsDiff($statementsLocal, $statementsCurrent);
 
-        return $satementsDiff;
+        return $satementsNew;
     }
 
     public function exportAction ($template)

@@ -76,7 +76,7 @@ class Spb_AnnotateController extends Spb_Controller
         $logger->info('publish updates to feed: "' . $feedUri . '".');
 
         // TODO tell the Push Controller to publish this resources feed
-        $pushController = new Spb_PushController($this->_app);
+        $pushController = $this->_app->getController('Spb_PushController');
         $pushController->publish($feedUri);
     }
 

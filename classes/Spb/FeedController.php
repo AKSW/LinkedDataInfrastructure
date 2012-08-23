@@ -16,10 +16,10 @@ class Spb_FeedController extends Spb_Controller
 
         if ($uri !== null) {
 
-            $annotateController = new Spb_AnnotateController($this->_app);
+            $annotateController = $this->_app->getController('Spb_AnnotateController');
             $notes = $annotateController->getNotes($uri);
 
-            $pushController = new Spb_PushController($this->_app);
+            $pushController = $this->_app->getController('Spb_PushController');
 
             $feedUri = $this->_app->getBaseUri() . '?c=feed&amp;a=getfeed&amp;uri=' . urlencode($uri);
 
