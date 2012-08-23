@@ -1,17 +1,46 @@
 <?php
+require_once 'Tools.php';
+
 class Spb_ModelController extends Spb_Controller
 {
+    static $SPO_QUERY = 'SELECT ?s ?p ?o WHERE {?s ?p ?o.}';
+
     public function getChanges ($resourceUri)
     {
         $bootstrap = $this->_app->getBootstrap();
         $store = $bootstrap->getResource('store');
 
-        $model = $store->getModel($resourceUri);
+        if ($store->isModelAvailable($resourceUri, true)) {
+            $model = $store->getModel($resourceUri);
+        } else {
+            $model = $store->getNewModel ($resourceUri);
+        }
+        $result = $model->sparqlQuery(self::$SPO_QUERY);
 
-        $statementsNew = Tools::getLinkedDataResource($resourceUri, $model->getModelIri());
-//        $statementsDiff = Erfurt_Rdf_Model::getStatementsDiff($statementsLocal, $statementsCurrent);
+        $localModel = new Erfurt_Rdf_MemoryModel($result);
+        $localStatements = $localModel->getStatements();
 
-        return $satementsNew;
+        $currentStatements = Tools::getLinkedDataResource($resourceUri, $model->getModelIri());
+        $diffStatements = Erfurt_Rdf_Model::getStatementsDiff($localStatements, $currentStatements);
+
+        return $diffStatements;
+    }
+
+    public function diffAction ($template)
+    {
+        $bootstrap = $this->_app->getBootstrap();
+        $request = $bootstrap->getResource('request');
+
+        $resourceUri = $request->getValue('resource', 'get');
+
+        if ($resourceUri !== null) {
+            $diff = $this->getChanges($resourceUri);
+            var_dump($diff);
+        } else {
+            $template->addContent('templates/resourcediff.phtml');
+        }
+
+        return $template;
     }
 
     public function exportAction ($template)
