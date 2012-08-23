@@ -59,7 +59,17 @@ class Spb_PingbackController extends Spb_Controller
                     'The ping is invalid, because there are no statements at the source'
                 );
             }
-            $template->addMessage('Ping was received successfully');
+
+            $fromform = $request->getValue('fromform', 'post');
+
+            $successMsg = 'Ping was received successfully';
+
+            if ($fromform !== null) {
+                $template->addMessage($successMsg);
+            } else {
+                $template->disableLayout();
+                $template->setRawContent('OK. ' . $successMsg);
+            }
         } else {
             // no ping, show form for manual ping
             $template->addContent('templates/sendpingback.phtml');
