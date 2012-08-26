@@ -3,7 +3,7 @@ require_once 'Tools.php';
 
 class Spb_ModelController extends Spb_Controller
 {
-    static $SPO_QUERY = 'SELECT ?s ?p ?o WHERE {?s ?p ?o.}';
+    public static $SPO_QUERY = 'SELECT ?s ?p ?o WHERE {?s ?p ?o.}';
 
     public function getChanges ($resourceUri)
     {
