@@ -109,4 +109,55 @@ class Spb_ModelController extends Spb_Controller
 
         return $template;
     }
+
+    public function modeltestAction ($template)
+    {
+        $bootstrap = $this->_app->getBootstrap();
+        $store = $bootstrap->getResource('store');
+        $model = $bootstrap->getResource('model');
+
+        $modelUri = $model->getModelIri();
+        $nsRdf = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
+        $nsRdfs = 'http://www.w3.org/2000/01/rdf-schema#';
+
+        $store->addStatement(
+            $modelUri,
+            'http://ldi.aksw.org/sub',
+            $nsRdf . 'type',
+            array('value' => 'http://ldi.aksw.org/class', 'type' => 'uri')
+        );
+        $store->addStatement(
+            $modelUri,
+            'http://ldi.aksw.org/class',
+            $nsRdf . 'type',
+            array('value' => $nsRdfs . 'Class', 'type' => 'uri')
+        );
+        $store->addStatement(
+            $modelUri,
+            'http://ldi.aksw.org/sub',
+            'http://ldi.aksw.org/pred',
+            array('value' => 'http://ldi.aksw.org/obj', 'type' => 'uri')
+        );
+        $store->addStatement(
+            $modelUri,
+            'http://ldi.aksw.org/sub',
+            'http://ldi.aksw.org/lab',
+            array('value' => 'Subject', 'type' => 'literal')
+        );
+
+        echo 'model uri: ' . $modelUri;
+
+        $query = '
+            SELECT ?s ?p ?o
+            WHERE {
+                ?s ?p ?o.
+            }
+        ';
+
+        $result = $model->sparqlQuery($query);
+
+        var_dump($result);
+
+        return $template;
+    }
 }
