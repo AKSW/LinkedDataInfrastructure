@@ -1,6 +1,6 @@
 <?php
 
-class Spb_Controller
+class Ldi_Controller
 {
     protected $_app = null;
 

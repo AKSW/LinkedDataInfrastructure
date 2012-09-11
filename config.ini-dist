@@ -1,7 +1,7 @@
-[spb]
+[ldi]
 ; In this section you can tune some parameters of XODX
 
-default.model = "http://localhost/Spb"
+default.model = "http://localhost/Ldi"
 
 push.enable = true;
 ;push.hub = "http://pubsubhubbub.appspot.com"

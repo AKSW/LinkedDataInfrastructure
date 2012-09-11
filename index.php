@@ -17,7 +17,7 @@ if ($main_dir[strlen($main_dir) - 1] != '/') {
 $includePath  = get_include_path() . PATH_SEPARATOR;
 
 $includePath .= $main_dir . '/classes/' . PATH_SEPARATOR;
-$includePath .= $main_dir . '/classes/Spb/' . PATH_SEPARATOR;
+$includePath .= $main_dir . '/classes/Ldi/' . PATH_SEPARATOR;
 $includePath .= $main_dir . '/libraries/' . PATH_SEPARATOR;
 $includePath .= $main_dir . '/libraries/Erfurt/library' . PATH_SEPARATOR;
 $includePath .= $main_dir . '/libraries/lib-dssn-php/DSSN' . PATH_SEPARATOR;
@@ -31,7 +31,7 @@ require_once 'Application.php';
 # Configure Zend Autoloader
 $autoloader = Zend_Loader_Autoloader::getInstance();
 $autoloader->registerNamespace('Erfurt_');
-$autoloader->registerNamespace('Spb_');
+$autoloader->registerNamespace('Ldi_');
 
 $app = Application::getInstance();
 $app->setBaseUri($base_uri);

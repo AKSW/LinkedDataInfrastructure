@@ -3,7 +3,7 @@
 /**
  * This class implements a pubsubhubbub publisher and subscriber
  */
-class Spb_PushController extends Spb_Controller
+class Ldi_PushController extends Ldi_Controller
 {
 
     private $_callbackUrl;

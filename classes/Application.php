@@ -7,7 +7,7 @@ class Application
 {
     private static $_app = null;
 
-    private $_classNamespace = 'Spb_';
+    private $_classNamespace = 'Ldi_';
     private $_bootstrap = null;
     private $_baseUri = null;
     private $_baseDir = null;

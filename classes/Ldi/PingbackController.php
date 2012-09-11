@@ -2,7 +2,7 @@
 
 require_once 'Tools.php';
 
-class Spb_PingbackController extends Spb_Controller
+class Ldi_PingbackController extends Ldi_Controller
 {
     public function pingAction($template)
     {
@@ -37,7 +37,7 @@ class Spb_PingbackController extends Spb_Controller
                         $spo[$target] = $po;
                         $spo = array_merge($spo, $sp, $so);
 
-                        $annotateController = $this->_app->getController('Spb_AnnotateController');
+                        $annotateController = $this->_app->getController('Ldi_AnnotateController');
                         $annotateController->addNote($target, $source, $spo);
                     } else {
                         // should not happen, because we have checked this with hasResource()

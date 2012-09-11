@@ -38,7 +38,7 @@ class Bootstrap
         // TODO merge with some default settings
         // TODO move most settings into the model
 
-        return $configArray['spb'];
+        return $configArray['ldi'];
     }
 
     private function initStore ()
@@ -112,7 +112,7 @@ class Bootstrap
             $values['all'][$key] = 'session';
         }
 
-        $request = new Spb_Request($_SERVER['REQUEST_METHOD'], $values);
+        $request = new Ldi_Request($_SERVER['REQUEST_METHOD'], $values);
 
         $body = file_get_contents('php://input');
 
@@ -125,7 +125,7 @@ class Bootstrap
 
     private function initLogger ()
     {
-        return new Spb_Logger();
+        return new Ldi_Logger();
     }
 
 }

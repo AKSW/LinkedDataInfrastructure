@@ -1,6 +1,6 @@
 <?php
 
-class Spb_FeedController extends Spb_Controller
+class Ldi_FeedController extends Ldi_Controller
 {
 
     /**
@@ -16,10 +16,10 @@ class Spb_FeedController extends Spb_Controller
 
         if ($uri !== null) {
 
-            $annotateController = $this->_app->getController('Spb_AnnotateController');
+            $annotateController = $this->_app->getController('Ldi_AnnotateController');
             $notes = $annotateController->getNotes($uri);
 
-            $pushController = $this->_app->getController('Spb_PushController');
+            $pushController = $this->_app->getController('Ldi_PushController');
 
             $feedUri = $this->_app->getBaseUri() . '?c=feed&amp;a=getfeed&amp;uri=' . urlencode($uri);
 

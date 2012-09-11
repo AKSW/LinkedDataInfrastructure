@@ -1,6 +1,6 @@
 <?php
 
-class Spb_Logger
+class Ldi_Logger
 {
 
     private $_file;
@@ -10,7 +10,7 @@ class Spb_Logger
         $app = Application::getInstance();
 
         if ($filePath === null) {
-            $filePath = $app->getBaseDir() . '/spb.log';
+            $filePath = $app->getBaseDir() . '/ldi.log';
         }
 
         $this->_file = fopen($filePath, 'a');

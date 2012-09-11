@@ -1,6 +1,6 @@
 <?php
 
-class Spb_AnnotateController extends Spb_Controller
+class Ldi_AnnotateController extends Ldi_Controller
 {
 
     /**
@@ -71,7 +71,7 @@ class Spb_AnnotateController extends Spb_Controller
         $store->addMultipleStatements($model->getModelIri(), $newNote);
 
         // Strange bug fix
-        $model->sparqlQuery(Spb_ModelController::$SPO_QUERY);
+        $model->sparqlQuery(Ldi_ModelController::$SPO_QUERY);
 
         $logger->info('addNote: note written to model.');
 
@@ -80,7 +80,7 @@ class Spb_AnnotateController extends Spb_Controller
         $logger->info('publish updates to feed: "' . $feedUri . '".');
 
         // TODO tell the Push Controller to publish this resources feed
-        $pushController = $this->_app->getController('Spb_PushController');
+        $pushController = $this->_app->getController('Ldi_PushController');
         $pushController->publish($feedUri);
     }
 

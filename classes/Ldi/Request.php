@@ -1,6 +1,6 @@
 <?php
 
-class Spb_Request
+class Ldi_Request
 {
     /**
      * The request method. GET, POST, SESSION, ...
