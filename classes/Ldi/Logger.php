@@ -10,7 +10,7 @@ class Ldi_Logger
         $app = Application::getInstance();
 
         if ($filePath === null) {
-            $filePath = $app->getBaseDir() . '/ldi.log';
+            $filePath = $app->getBaseDir() . 'ldi.log';
         }
 
         $this->_file = fopen($filePath, 'a');
