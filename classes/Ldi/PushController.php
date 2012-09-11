@@ -61,6 +61,24 @@ class Ldi_PushController extends Ldi_Controller
         }
     }
 
+    public function publishFeedAction ($template)
+    {
+        $bootstrap = $this->_app->getBootstrap();
+        $request = $bootstrap->getResource('request');
+
+        $topicUri = $request->getValue('uri', 'get');
+
+        if ($topicUri != null) {
+            $this->publish($topicUri);
+
+            // TODO add something to the layout
+        } else {
+            $template->addContent('templates/publishfeed.phtml');
+        }
+
+        return $template;
+    }
+
     public function getDefaultHubUrl ()
     {
         return $this->_defaultHubUrl;
