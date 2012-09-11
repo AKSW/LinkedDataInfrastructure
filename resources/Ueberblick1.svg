@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="53cm" height="30cm" viewBox="91 -114 1046 594" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <polygon style="fill: #ffffff" points="896,29 994.4,29 1006.4,41 1006.4,95 896,95 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="896,29 994.4,29 1006.4,41 1006.4,95 896,95 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="994.4,29 994.4,41 1006.4,41 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="903" y="53.9">
+      <tspan x="903" y="53.9">web resource</tspan>
+      <tspan x="903" y="69.9">with</tspan>
+      <tspan x="903" y="85.9">pingback:to</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1043" cy="220" rx="6" ry="6"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1043" cy="220" rx="6" ry="6"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1019" y1="232" x2="1067" y2="232"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1043" y1="226" x2="1043" y2="256"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1043" y1="256" x2="1019" y2="282"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1043" y1="256" x2="1067" y2="282"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1043" y="305.9">
+      <tspan x="1043" y="305.9">User</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="698,-113 765.6,-113 777.6,-101 777.6,-63 698,-63 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="698,-113 765.6,-113 777.6,-101 777.6,-63 698,-63 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="765.6,-113 765.6,-101 777.6,-101 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="705" y="-88.1">
+      <tspan x="705" y="-88.1">comment</tspan>
+      <tspan x="705" y="-72.1">resource</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="92" y="-78" width="408" height="519"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="92" y="-78" width="408" height="519"/>
+    <rect style="fill: #ffffff" x="92" y="-98" width="40" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="92" y="-98" width="40" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="94" y="-83">Ldi</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="190" y="101" width="202.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="190" y="101" width="202.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="291.25" y="120">FeedController</text>
+    <rect style="fill: #ffffff" x="190" y="129" width="202.5" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="190" y="129" width="202.5" height="8"/>
+    <rect style="fill: #ffffff" x="190" y="137" width="202.5" height="99"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="190" y="137" width="202.5" height="99"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="193" y="151">+getFeed(resource:uri)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="193" y="167">-updateFeed(resource:uri)</text>
+    <text font-size="11.2" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:italic;font-weight:normal" x="193" y="181.5">realized by</text>
+    <text font-size="11.2" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:italic;font-weight:normal" x="193" y="195.5">AnnotateControlle</text>
+    <text font-size="11.2" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:italic;font-weight:normal" x="193" y="209.5">r and common</text>
+    <text font-size="11.2" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:italic;font-weight:normal" x="193" y="223.5">model</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="119.9" y="-58" width="341.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="119.9" y="-58" width="341.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="290.45" y="-39">PingbackController</text>
+    <rect style="fill: #ffffff" x="119.9" y="-30" width="341.1" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="119.9" y="-30" width="341.1" height="8"/>
+    <rect style="fill: #ffffff" x="119.9" y="-22" width="341.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="119.9" y="-22" width="341.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="122.9" y="-8">+ping(source:uri,target:uri,comment:string)</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="223" y="316" width="148.6" height="56"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="223" y="316" width="148.6" height="56"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="297.3" y="335">PushController</text>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:normal" x="297.3" y="350.5">PubSubHubbub</text>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:normal" x="297.3" y="364.5">Controller</text>
+    <rect style="fill: #ffffff" x="223" y="372" width="148.6" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="223" y="372" width="148.6" height="8"/>
+    <rect style="fill: #ffffff" x="223" y="380" width="148.6" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="223" y="380" width="148.6" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="226" y="394">-publish(feed:uri)</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="382.634" y1="5.03378" x2="1017" y2="246.118"/>
+    <polygon style="fill: #000000" points="384.41,0.359927 367.678,-0.650242 380.858,9.70763 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="384.41,0.359927 367.678,-0.650242 380.858,9.70763 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="814" y="138">ping(commentUri, webresourceUri, null)</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="1069,256 1102,256 1102,123.75 1101,123.75 1101,-88 785.305,-88 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="797.953,-93 781.953,-88 797.953,-83 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1101.5" y="120.75">publishes</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="896" y1="62" x2="468.61" y2="-2.93254"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="481.865,-5.97613 465.295,-3.43612 480.363,3.91042 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="666.988" y="18.273">{pingback:to}</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="974.541" y1="111.326" x2="1017" y2="201.047"/>
+    <polygon style="fill: #000000" points="979.06,109.187 967.697,96.8634 970.021,113.465 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="979.06,109.187 967.697,96.8634 970.021,113.465 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1019.94" y="148.417">request</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="774.739" y1="-62.0356" x2="897.353" y2="24.1506"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="884.131,20.9682 900.096,26.0785 889.881,12.7871 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="803.82" y="-14.2922">{referesTo???}</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="290.905" y1="83.0113" x2="290.567" y2="-1.00766"/>
+    <polygon style="fill: #000000" points="285.906,83.0315 290.97,99.0112 295.905,82.9912 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="285.906,83.0315 290.97,99.0112 295.905,82.9912 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="195" y="49.75">updateFeed(webresourceUri)</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="680.135" y1="-80.5236" x2="461.988" y2="-52.2403"/>
+    <polygon style="fill: #000000" points="680.778,-75.5651 696.002,-82.5808 679.492,-85.4821 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="680.778,-75.5651 696.002,-82.5808 679.492,-85.4821 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="579.49" y="-57.4748">request</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="295.385" y1="298.017" x2="293.437" y2="236.995"/>
+    <polygon style="fill: #000000" points="290.388,298.177 295.896,314.009 300.382,297.858 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="290.388,298.177 295.896,314.009 300.382,297.858 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="217" y="280.75">publish(feedOfWebresourceUri)</text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="767,443 777,433 853.25,433 853.25,469 843.25,479 767,479 767,443 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="767,443 777,433 853.25,433 853.25,469 843.25,479 767,479 767,443 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="767" y1="443" x2="843.25" y2="443"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="843.25" y1="443" x2="853.25" y2="433"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="843.25" y1="443" x2="843.25" y2="479"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="777" y="464.9">
+      <tspan x="777" y="464.9">PushHub</tspan>
+    </text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="777" y1="467.9" x2="833.25" y2="467.9"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="749.341" y1="449.685" x2="372.587" y2="373.27"/>
+    <polygon style="fill: #000000" points="748.347,454.586 765.021,452.866 750.334,444.785 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="748.347,454.586 765.021,452.866 750.334,444.785 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="614" y="458.75">publish(feedOfWebresourceUri)</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="406.028" y1="157.295" x2="767.021" y2="432.003"/>
+    <polygon style="fill: #000000" points="409.056,153.316 393.296,147.606 403,161.274 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="409.056,153.316 393.296,147.606 403,161.274 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="579.76" y="299.502">request</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="393.506" y1="226.705" x2="760.657" y2="435.688"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="747.192,433.777 763.57,437.347 752.139,425.087 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="532.248" y="363.958">{rel="hub"}</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="894.999" y1="71.0695" x2="400.111" y2="150.933"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="411.8,143.981 396.801,151.467 413.393,153.854 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="680" y="85">{activityFeed}</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="409.266" y1="149.809" x2="1017.01" y2="251.646"/>
+    <polygon style="fill: #000000" points="410.093,144.878 393.486,147.165 408.44,154.741 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="410.093,144.878 393.486,147.165 408.44,154.741 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="706.488" y="193.269">request</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="851.643" y1="420.911" x2="1018.84" y2="276.82"/>
+    <polygon style="fill: #000000" points="848.379,417.124 839.522,431.356 854.907,424.699 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="848.379,417.124 839.522,431.356 854.907,424.699 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1016" y="389.75">subscribe(feedOfWebresourceUri)</text>
+  </g>
+</svg>
