@@ -8,11 +8,22 @@ class Ldi_Request
     private $_method;
 
     /**
+     * The request header array
+     */
+    private $_header;
+
+    /**
      * Array keeping the values of the request
      * The types in the first dimension, the keys in the second dimension and the values as values
      * An additional 1st dimension key 'all' holds the key-type mappings
      */
     private $_values;
+
+    /**
+     * The URL of the current request
+     */
+    private $_requestUri;
+
 
     /**
      * Constructor for the Request object.
@@ -109,6 +120,33 @@ class Ldi_Request
         } else {
             return null;
         }
+    }
+
+    /**
+     * Returns the header of the request
+     * @return array with the header fields of the request
+     */
+    public function getHeader ()
+    {
+        if (!isset($this->_header)) {
+            // read headers from PHP http://php.net/manual/en/function.getallheaders.php
+            $this->_header = getallheaders();
+        }
+
+        return $this->_header;
+    }
+
+    /**
+     * Returns the URL of the current request
+     */
+    public function getRequestUri ()
+    {
+        if (!isset($this->_requestUri)) {
+            $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != "off") ? "https" : "http";
+            $this->_requestUri = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+        }
+
+        return $this->_requestUri;
     }
 
     /**
