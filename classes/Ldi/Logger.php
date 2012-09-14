@@ -13,7 +13,12 @@ class Ldi_Logger
             $filePath = $app->getBaseDir() . 'ldi.log';
         }
 
-        $this->_file = fopen($filePath, 'a');
+        if (! $this->_file = @fopen($filePath, 'a')) {
+            throw new Exception(
+                'Could not open the log file. Please create "ldi.log" in ldi-root and add ' .
+                'write-permissions for the webserver.'
+            );
+        }
     }
 
     public function __destruct ()
