@@ -2,6 +2,9 @@
 
 require_once 'Tools.php';
 
+/**
+ * This PingbackController can receive semantic pings through the pingAction
+ */
 class Ldi_PingbackController extends Ldi_Controller
 {
     public function pingAction($template)
