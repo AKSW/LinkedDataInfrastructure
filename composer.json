@@ -1,0 +1,16 @@
+{
+    "name": "aksw/ldi",
+    "description": "A stand-alone Linked Data infrastructure service which provides Semantic Pingback and Activity Streams",
+    "type": "application",
+    "require": {
+        "aksw/erfurt": "dev-develop"
+    },
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Natanael Arndt",
+            "email": "arndtn@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
